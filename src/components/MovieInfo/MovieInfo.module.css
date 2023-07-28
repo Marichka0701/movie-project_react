@@ -1,0 +1,57 @@
+.info {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: left;
+    max-width: 200px;
+}
+
+.title.light {
+    color: darkblue;
+}
+
+.title.night {
+    color: lightgrey;
+}
+
+.titleAndRating {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.languagesAndGenres {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lang {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.lang.light {
+    color: #282c34;
+}
+
+.lang.night {
+    color: lightgrey;
+}
+
+.overview {
+    color: gray;
+    line-height: 20px;
+    text-align: left;
+}

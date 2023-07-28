@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {RouterProvider} from "react-router-dom";
+import {router} from "./routing/router";
+import {ContextProvider} from "./HOC/ContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-    <App />
-  // {/*</React.StrictMode>*/}
+    <ContextProvider>
+        <RouterProvider router={router}/>
+    </ContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

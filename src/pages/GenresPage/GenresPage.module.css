@@ -1,0 +1,60 @@
+.genresPage {
+    margin: 100px;
+    height: 100%;
+    display: flex;
+}
+
+.list {
+    position: fixed;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list_item {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.movies_lists {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 300px;
+}
+
+.movie_card {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prev, .next {
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    transition: 0.8s;
+    background: #282c34;
+
+    color: whitesmoke;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.prev:hover, .next:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.prev.light:disabled, .next.light:disabled {
+    background: rgba(40, 44, 52, 0.73);
+    transform: scale(1);
+}

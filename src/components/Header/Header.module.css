@@ -1,0 +1,61 @@
+.header {
+    width: 100%;
+    height: 50px;
+    padding: 30px 50px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.header.light {
+    background: #282c34;
+}
+
+.header.night {
+    background: whitesmoke;
+}
+
+.logo {
+    width: 50px;
+}
+
+.options {
+    display: flex;
+    gap: 100px;
+}
+
+.options_item {
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.8s;
+}
+
+.options_item.light {
+    color: white;
+}
+
+.options_item.night {
+    color: #282c34;
+}
+
+.options_item:hover {
+    transform: scale(0.9);
+    transition: 0.8s;
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nightMode, .lightMode {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
