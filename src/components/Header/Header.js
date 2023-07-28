@@ -11,7 +11,7 @@ import {Context} from "../../HOC/ContextProvider";
 const Header = () => {
     const {context, setContext} = useContext(Context);
 
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
     const handleChange = () => {
         setTheme(prev => prev === 'light' ? 'dark' : 'light');
         setContext(theme);
@@ -27,6 +27,8 @@ const Header = () => {
         navigateToGenres(`${MainRoutes.genres}`)
     };
 
+    console.log(context)
+
     return (
         <div className={`${styles.header} ${context === 'light' ? `${styles.light}` : `${styles.night}`}`}>
             <div>
@@ -40,8 +42,9 @@ const Header = () => {
                 <UserInfo/>
                 <Switch
                     onChange={handleChange}
-                    checked={theme === 'dark'}
-                    color={'blue'} onColor={'black'}
+                    checked={theme === 'light'}
+                    color={'blue'}
+                    onColor={'black'}
                     checkedIcon={<img className={styles.nightMode}
                                       src='https://img.icons8.com/ios/50/partly-cloudy-night--v1.png'
                                       alt="night mode icon"/>}

@@ -19,6 +19,14 @@
     align-items: center;
 }
 
+.currentPage.light {
+    color: #282c34;
+}
+
+.currentPage.night {
+    color: whitesmoke;
+}
+
 .prev, .next {
     width: 100px;
     height: 30px;
